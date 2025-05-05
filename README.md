@@ -2,6 +2,30 @@
 
 <img src="m2w_tw.gif">
 
+## Download Parsed Datasets from Hugging Face Hub
+
+If you haven't already, install FiftyOne:
+
+```bash
+pip install -U fiftyone
+```
+
+## Usage
+
+```python
+import fiftyone as fo
+from fiftyone.utils.huggingface import load_from_hub
+
+# Load the cross-task dataset
+cross_task = load_from_hub("Voxel51/mind2web_multimodal_test_task")
+
+# Load the cross-domain dataset
+cross_domain = load_from_hub("Voxel51/mind2web_multimodal_test_domain")
+
+# Load the cross-website dataset
+cross_domain = load_from_hub("Voxel51/mind2web_multimodal_test_website")
+```
+
 ## Dataset Description
 **Curated by:** The Ohio State University NLP Group (OSU-NLP-Group)  
 **Shared by:** OSU-NLP-Group on Hugging Face  
